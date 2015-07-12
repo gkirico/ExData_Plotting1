@@ -22,7 +22,7 @@ lines(dat$Sub_metering_2, type = "l", ylab = "", xlab = "", col=c("Red"))
 lines(dat$Sub_metering_3, type = "l", ylab = "", xlab = "", col=c("Blue"), ylab= "Energy sub metering")
 axis(1, at = c(1, 1440,2880), c("Thu", "Fri", "Sat"))
 axis(2, at = c(0,10,20,30))
-legend("topright", legend = c(names[7:9]), col=c("black","red","blue"), lwd=1)
+legend("topright", legend = c(names[7:9]), col=c("black","red","blue"), lwd=1, bty="n")
 box()
 #subplot 4
 plot(dat$Global_reactive_power, type = "l", xlab = "datetime", ylab = names[4], axes = FALSE)
